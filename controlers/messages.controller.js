@@ -1,8 +1,7 @@
 const path = require('path');
 
 function getMessages(req, res) {
-  res.send('<ul><li>hello AZIZ</li></ul>')
-  // res.sendFile(path.join(__dirname, '..', 'public', 'images', 'skimountain.jpg'));
+    res.sendFile(path.join(__dirname,'..','public','rigali-white-logo.png'));
 }
 
 function postMessage(req, res) {
