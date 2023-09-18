@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 
 const freindsRouter= require("./routers/freinds.router");
+const messagesRouter= require('./routers/messages.router')
 
 const app = express();
 
@@ -19,7 +20,8 @@ app.use(function(req, res,next){
 app.use(express.json());
 
 //end points
-app.use('/freinds',freindsRouter)
+app.use('/freinds',freindsRouter);
+app.use('/messages',messagesRouter)
 
 app.listen(PORT, () => {
   console.log(`Listening on ${PORT}...`);
